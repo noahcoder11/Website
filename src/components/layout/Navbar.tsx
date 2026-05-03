@@ -13,7 +13,7 @@ const Navbar = () => {
           <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>Projects</NavLink>
           <NavLink to="/skills" className={({ isActive }) => (isActive ? 'active' : '')}>Skills</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>Contact</NavLink>
-          <a href="/papers/Resumé.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="/papers/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </nav>
       </div>
     </header>

@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="cta-group">
             <Link to="/experience" className="btn btn-primary">See my experience</Link>
             <Link to="/projects" className="btn btn-outline">View projects</Link>
-            <a href="/papers/Resumé.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Resume</a>
+            <a href="/papers/Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Resume</a>
           </div>
         </div>
         <div className="hero-image-container">
