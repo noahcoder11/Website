@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import headshot from '../../assets/headshot.jpeg';
 
 const Hero = () => {
   return (
@@ -21,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="hero-image-container">
           <div className="hero-image-wrapper">
-            <img src={headshot} alt="Noah Hester" className="hero-image" />
+            <img src="/headshot.jpeg" alt="Noah Hester" className="hero-image" />
           </div>
         </div>
       </div>
