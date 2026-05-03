@@ -37,42 +37,42 @@ const academicProjects = [
     title: "Electronics Project Portfolio",
     description: "Comprehensive portfolio detailing the design, construction, and testing of an adjustable DC power supply, a transistor gain measurement circuit, an oscilloscope apparatus, and an Arduino-controlled function generator.",
     tech: ["C++ (Arduino)", "MATLAB", "Circuit Design", "Soldering"],
-    link: "./papers/Project Portfolio.pdf",
-    image: "./project_images/electronics.png"
+    link: "/papers/Project Portfolio.pdf",
+    image: "/project_images/electronics.png"
   },
   {
     id: 2,
     title: "Facial Segmentation in Images",
     description: "A Digital Image Processing research project developing automated preliminary processes for facial recognition. Implemented preprocessing, elliptical fitting, and masking to isolate faces and eyes from backgrounds.",
     tech: ["Python", "OpenCV", "Scikit-image", "Numpy"],
-    link: "./papers/Facial Segmentation in Images Final Report.pdf",
-    image: "./project_images/facial.png"
+    link: "/papers/Facial Segmentation in Images Final Report.pdf",
+    image: "/project_images/facial.png"
   },
   {
     id: 3,
     title: "Neural Ordinary Differential Equations",
     description: "An academic presentation exploring Neural ODEs as a continuous-time approach to machine learning, covering continuous backpropagation, the Adjoint State method, and training first/higher-order NODEs.",
     tech: ["Machine Learning", "Calculus", "Differential Equations"],
-    link: "./papers/Neural_ODE_Presentation.pdf",
+    link: "/papers/Neural_ODE_Presentation.pdf",
     github: "https://github.com/noahcoder11/NEURAL-ORDINARY-DIFFERENTIAL-EQUATIONS",
-    image: "./project_images/neural.png"
+    image: "/project_images/neural.png"
   },
   {
     id: 4,
     title: "Discrete Mathematics Proof Portfolio",
     description: "A rigorous collection of mathematical proofs utilizing induction, direct proofs, and contradiction to solve problems in combinatorics, graph theory (bipartite graphs, planarity), and calculus.",
     tech: ["Proof Writing", "Graph Theory", "Combinatorics"],
-    link: "./papers/Proof Portfolio.pdf",
-    image: "./project_images/proof.png"
+    link: "/papers/Proof Portfolio.pdf",
+    image: "/project_images/proof.png"
   },
   {
     id: 5,
     title: "Facial Recognition with PCA",
     description: "A comprehensive facial recognition system focusing on facial segmentation, feature extraction, and classification using Principal Component Analysis (PCA). Implemented a pipeline for high-accuracy face identification.",
     tech: ["Python", "Numpy", "PCA", "Machine Learning"],
-    link: "./papers/Facial Recognition PCA Report.pdf",
+    link: "/papers/Facial Recognition PCA Report.pdf",
     github: "https://github.com/noahcoder11/COMP-445-FINAL-PROJECT",
-    image: "./project_images/pca_recognition.png"
+    image: "/project_images/pca_recognition.png"
   }
 ];
 
