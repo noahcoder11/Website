@@ -1,0 +1,129 @@
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.hero-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 0 30px var(--glow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px var(--glow-color);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.greeting {
+  color: var(--accent-color);
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: clamp(30px, 5vw, 50px);
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.cta-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: #0f172a !important; /* Dark text for contrast */
+  border: 1px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-2px);
+  color: #0f172a !important;
+  text-shadow: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.btn-outline:hover {
+  background-color: rgba(96, 165, 250, 0.1);
+  transform: translateY(-2px);
+}
