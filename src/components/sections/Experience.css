@@ -1,18 +1,25 @@
 .section-title {
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  margin-bottom: 2rem;
   color: var(--text-primary);
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 3rem;
+  }
 }
 
 .section-title::after {
   content: '';
   display: block;
   height: 1px;
-  width: 300px;
+  width: min(300px, 30vw);
   background-color: var(--border-color);
   margin-left: 1.5rem;
+  flex-shrink: 0;
 }
 
 .experience-list {

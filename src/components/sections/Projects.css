@@ -1,7 +1,14 @@
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
 }
 
 .academic-grid {
@@ -19,12 +26,18 @@
 .project-card {
   background-color: var(--bg-secondary);
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   border: 1px solid transparent;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    padding: 2rem;
+  }
 }
 
 .academic-card {
